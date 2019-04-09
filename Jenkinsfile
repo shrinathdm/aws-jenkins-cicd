@@ -11,11 +11,6 @@ pipeline {
     npm_config_cache = 'npm-cache'
   }
   stages {
-    stage('Install Packages') {
-      steps {
-        sh 'npm install'
-      }
-    }
     stage('Cache clean'){
        steps{
 	 sh 'npm cache verify'
